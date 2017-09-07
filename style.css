@@ -74,3 +74,31 @@
     from {opacity: .4}
     to {opacity: 1}
 }
+
+/* Navigation */
+nav{
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: "a a a";
+    grid-gap: 2em;
+}
+nav > a{
+    display: grid;
+    align-items: center;
+/*    padding: 3em;*/
+    height: 10em;
+    width: 10em;
+    grid-area: "a";
+    margin: auto;
+    border: 0.5em solid;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+}
+nav >p{
+    align-self: center;
+    overflow: auto;
+    position: absolute;
+    top: 50%;
+}
