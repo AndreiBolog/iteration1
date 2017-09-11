@@ -4,7 +4,7 @@
 }
 /* Slideshow container */
 .slideshow-container {
-    max-width: 100vw;
+    width: 100vw;
     position: relative;
     margin: auto;
 }
@@ -12,7 +12,14 @@
 .mySlides {
     display: none;
 }
-
+.size-img{
+    width: 100%;
+    height: 60vh;
+}
+.page-title{
+    position: absolute;
+    z-index: 2;
+}
 /* Next & previous buttons */
 .prev, .next {
     cursor: pointer;
@@ -91,7 +98,7 @@ nav > a{
     width: 10em;
     grid-area: "a";
     margin: auto;
-    border: 0.5em solid;
+    border: 1px solid;
     border-radius: 50%;
     text-align: center;
     text-decoration: none;
